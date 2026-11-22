@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: 安装限流库（e2e 依赖，项目间共用同一份实现）
+        run: python -m pip install "git+https://github.com/zxyin-dev/ratelimit-kit"
       - name: 签名双端一致性（Node vs Python，24 组金标准）
         run: python tests/parity_check.py
       - name: 端到端（自建服务端，限流/截断/重放）
