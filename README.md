@@ -1,5 +1,7 @@
 # sign-lab · 签名复算靶场
 
+![tests](https://github.com/zxyin-dev/sign-lab/actions/workflows/test.yml/badge.svg)
+
 一个**自己写服务端、自己写混淆、自己还原**的接口签名靶场。
 用来练习和展示「把混淆 JS 里的签名算法静态还原成纯 Python」这件事。
 
